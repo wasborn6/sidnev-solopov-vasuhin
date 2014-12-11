@@ -15,7 +15,14 @@ namespace BookStoreTeamProject
         public Form1()
         {
             InitializeComponent();
-            
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bookStoreDBDataSet.Books". При необходимости она может быть перемещена или удалена.
+            this.booksTableAdapter.Fill(this.bookStoreDBDataSet.Books);
+
         }
     }
 }
